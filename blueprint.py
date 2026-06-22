@@ -1,5 +1,5 @@
 class Person:
-    def __init__(self,name,age,city,country,amount=10):
+    def __init__(self,name,age,city,country,amount):
         self.name = name
         self.age = age
         self.city = city
