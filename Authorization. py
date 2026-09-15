@@ -1,0 +1,23 @@
+users = {
+    "admin": {"password": "admin123", "role": "admin"},
+    "user1": {"password": "user123", "role": "user"}
+}
+
+username = input("Username: ")
+password = input("Password: ")
+
+if username in users and users[username]["password"] == password:
+    role = users[username]["role"]
+
+    print("Login successful!")
+
+    if role == "admin":
+        print("Welcome Admin")
+        print("You can manage users and records.")
+
+    elif role == "user":
+        print("Welcome User")
+        print("You can view your records.")
+
+else:
+    print("Invalid username or password")
